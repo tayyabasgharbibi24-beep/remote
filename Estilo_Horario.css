@@ -1,0 +1,96 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    font-size: 1.8rem;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 80%;
+    max-width: 800px;
+    border: none;
+    height: 2px;
+    background-color: #3b82f6;
+    margin-bottom: 25px;
+}
+
+/* Table Design */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 850px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+    /* Simple Entrance Animation */
+    animation: simpleFadeIn 0.8s ease-in-out;
+}
+
+/* Table Header (th) */
+th {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+    border: 1px solid #1d4ed8;
+}
+
+th:first-child {
+    background-color: #1e40af;
+}
+
+/* Table Cells (td) */
+td {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    border: 1px solid #e5e7eb;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover effect kadagiti cell */
+td:hover {
+    background-color: #eff6ff;
+}
+
+/* First Column (Time) */
+td:first-child {
+    background-color: #f8fafc;
+    font-weight: bold;
+    color: #475569;
+}
+
+/* RECREO Row */
+td[colspan="5"] {
+    background-color: #f59e0b;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Simple Animation */
+@keyframes simpleFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
